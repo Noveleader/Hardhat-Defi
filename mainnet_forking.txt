@@ -1,0 +1,13 @@
+We are forking the mainnet locally, this  could be done by just 
+adding few lines to the hardhat config. 
+If the key belongs to alchemy for the mainnet forking
+
+npx hardhat node --fork https://eth-mainnet.g.alchemy.com/v2/<key>
+
+networks: {
+  hardhat: {
+    forking: {
+      url: "https://eth-mainnet.g.alchemy.com/v2/<key>",
+    }
+  }
+}
